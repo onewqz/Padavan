@@ -56,7 +56,7 @@ function update_page(){
 	if (eth_port_id > 0)
 		port_nm = 'LAN' + eth_port_id.toString();
 	$("hdr_port").innerHTML = '<#menu5_9#> - ' + port_nm;
-	document.title = '<#Web_Title#> - ' + port_nm;
+	document.title = '<% nvram_get_x("","device_nick"); %> - ' + port_nm;
 }
 
 function update_tabs(){

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title><#Web_Title#> - <#menu5_6_1#></title>
+<title><% nvram_get_x("","device_nick"); %> - <#menu5_6_1#></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
@@ -168,7 +168,7 @@ table td {text-align: center; }
                                                         <tr>
                                                             <td><span class="label"><#Wireless_Clients#></span></td>
                                                             <td>&nbsp;</td>
-                                                            <td><span class="label label-info"><#Web_Title#></span></td>
+                                                            <td><span class="label label-info"><% nvram_get_x("","device_nick"); %></span></td>
                                                             <td class="AP">&nbsp;</td>
                                                             <td class="AP"><span class="label"><#Device_type_02_RT#></span></td>
                                                             <td>&nbsp;</td>
