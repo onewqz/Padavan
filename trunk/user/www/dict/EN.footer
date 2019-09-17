@@ -1835,5 +1835,5 @@ IPRemote=IP (remote)
 Login=Login
 BTN_SHUTDOWN=Shutdown
 JS_shutdown=You need manually power on after shutdown!!! Continue to shutdown?
-
-
+Device_Nick=Device Nick:
+Device_Nick_Tip=Device nick name as web title.

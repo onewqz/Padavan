@@ -89,6 +89,13 @@ function validForm(){
 		return false;
 	}
 
+    if(document.form.device_nick.value  == ""){
+        alert("<#JS_Shareblanktest#>");
+        document.form.device_nick.focus();
+        document.form.device_nick.select();
+        return false;
+    }
+
 	var re = new RegExp("[^a-zA-Z0-9 _-]+", "gi");
 	if(re.test(document.form.computer_name.value)){
 		alert("<#JS_validchar#>");
@@ -211,6 +218,12 @@ function openLink(s) {
                                             </th>
                                             <td>
                                                 <input type="text" name="computer_name" id="computer_name" class="input" maxlength="15" size="32" value=""/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><a class="help_tooltip" href="javascript:void(0);" onmouseover="openTooltip(this,17,13);"><#Device_Nick#></a></th>
+                                            <td>
+                                                <input type="text" name="device_nick" class="input" autocomplete="off" maxlength="32" size="25" value="<% nvram_get_x("","device_nick"); %>" onKeyPress="return is_string(this,event);" />
                                             </td>
                                         </tr>
                                         <tr id="row_user" style="display:none">
